@@ -4,21 +4,21 @@ function buttonSize(options) {
     let buttonSizeSmall = document.querySelectorAll('.buttonSizeSmall');
 
     if (options.buttonSizeLarge_type === 'large')
-        options.buttonSizeLarge_type = '400px';
+        options.buttonSizeLarge_type = '600px';
     if (options.buttonSizeMed_type === 'medium')
-        options.buttonSizeMed_type = '150px';
+        options.buttonSizeMed_type = '300px';
     if (options.buttonSizeSmall_type === 'smaller')
-        options.buttonSizeSmall_type = '50px';
+        options.buttonSizeSmall_type = '150px';
         
     buttonSizeLarge.forEach(buttonSizeLarge => {
         buttonSizeLarge.style.width = `${options.buttonSizeLarge_type}`;
         buttonSizeLarge.style.height = `${options.buttonSizeLarge_type}`;
-        buttonSizeLarge.style.fontSize = "24px";
+        buttonSizeLarge.style.fontSize = "44px";
     })
     buttonSizeMed.forEach(buttonSizeMed => {
         buttonSizeMed.style.width = `${options.buttonSizeMed_type}`;
         buttonSizeMed.style.height = `${options.buttonSizeMed_type}`;
-        buttonSizeMed.style.fontSize = "18px";
+        buttonSizeMed.style.fontSize = "24px";
     })
     buttonSizeSmall.forEach(buttonSizeSmall => {
         buttonSizeSmall.style.width = `${options.buttonSizeSmall_type}`;
